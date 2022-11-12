@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>99 Chat</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+</head>
+<body>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="#"><i class="fa-regular fa-user"></i>&nbsp;<span>Profile</span></a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i>&nbsp;<span>Setting</span></a></li>
+                <li><a href="#"><i class="fa-solid fa-door-open"></i>&nbsp;<span>Logout</span></a></li>
+                <li><div id="google_translate_element"></div></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    <img class="body-img" src="../data/cover2.jpg" width="100%" height="100%" alt="">
+    <header>
+        <nav>
+            <div class="title">
+                <span class="head">99</span>
+                <br>
+                <span class="small-text small-head">chat</span>
+            </div>
+            <div></div>
+        </nav>
+    </header>
+    
+
+    <session class="show-case">
+        <div class="show-left">
+            <div class="left-box">
+                <div class="part-1">
+                    <i class="fa-solid fa-money-bill-1-wave blue"></i>
+                    <p class="small-text">12,361</p>
+                    <p class="small-text">Transaction</p>
+                </div>
+                <div class="part-2">
+                    <canvas id="transaction" height="75px" width="75px"></canvas>
+                    <p class="small-text">+50%</p>
+                </div>
+            </div>
+            <div class="left-box">
+                <div class="part-1">
+                    <i class="fa-solid fa-bug red"></i>
+                    <p class="small-text">120</p>
+                    <p class="small-text">Report</p>
+                </div>
+                <div class="part-2">
+                    <canvas id="report" height="75px" width="75px"></canvas>
+                    <p class="small-text">+5%</p>
+                </div>
+            </div>
+            <div class="left-box">
+                <div class="part-1">
+                    <i class="fa-regular fa-clock green"></i>
+                    <p class="small-text">11,00</p>
+                    <p class="small-text">Momements</p>
+                </div>
+                <div class="part-2">
+                    <canvas id="momement" height="75px" width="75px"></canvas>
+                    <p class="small-text">+80%</p>
+                </div>
+            </div>
+        </div>
+        <div class="show-center">
+            <div class="map">
+                <img src="../data/World-Map-Transparent.png" class="map-img"width="98%" height="100%" alt="">
+            </div>
+        </div>
+        <div class="show-right">
+                <div class="user">
+                    <p class="medium-text light"><span class="green">1,123,234</span> Users</p>
+                    <!-- <p class="small-text blue p-right">Total 123,234</p> -->
+                    <div class="user-table">
+                        <table>
+                            <tr>
+                                <td>
+                                    <p class="small-text light">121236</p>
+                                </td>
+                                <td><p class="small-text">johny</p></td>
+                                <td><span class="view-profile"><i class="fa-solid fa-eye"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="small-text light">121246</p>
+                                </td>
+                                <td><p class="small-text">sammy</p></td>
+                                <td><span class="view-profile"><i class="fa-solid fa-eye"></i></td>                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="small-text light">122236</p>
+                                </td>
+                                <td><p class="small-text">jane</p></td>
+                                <td><span class="view-profile"><i class="fa-solid fa-eye"></i></td>                             </tr>
+                            <tr>
+                                <td>
+                                    <p class="small-text light">121336</p>
+                                </td>
+                                <td><p class="small-text">jack</p></td>
+                                <td><span class="view-profile"><i class="fa-solid fa-eye"></i></td>                             </tr>
+                            <tr>
+                                <td>
+                                    <p class="small-text light">221236</p>
+                                </td>
+                                <td><p class="small-text">snow</p></td>
+                                <td><span class="view-profile"><i class="fa-solid fa-eye"></i></td>                             </tr>
+                            <tr>
+                                <td>
+                                    <p class="small-text light">021236</p>
+                                </td>
+                                <td><p class="small-text">lily</p></td>
+                                <td><span class="view-profile"><i class="fa-solid fa-eye"></i></td>                             </tr>
+                            <tr>
+                                <td>
+                                    <p class="small-text light">131236</p>
+                                </td>
+                                <td><p class="small-text">tom</p></td>
+                                <td><span class="view-profile"><i class="fa-solid fa-eye"></i></td>                             </tr>
+                            <tr>
+                                <td>
+                                    <p class="small-text light">151236</p>
+                                </td>
+                                <td><p class="small-text">jerry</p></td>
+                                <td><span class="view-profile"><i class="fa-solid fa-eye"></i></td>                             </tr>
+                            <tr>
+                                <td>
+                                    <p class="small-text light">021236</p>
+                                </td>
+                                <td><p class="small-text">jolie</p></td>
+                                <td><span class="view-profile"><i class="fa-solid fa-eye"></i></td>                             </tr>
+                            <tr>
+                                <td>
+                                    <p class="small-text light">161236</p>
+                                </td>
+                                <td><p class="small-text">jane</p></td>
+                                <td><span class="view-profile"><i class="fa-solid fa-eye"></i></td>                             </tr>
+                            <tr>
+                                <td>
+                                    <p class="small-text light">221236</p>
+                                </td>
+                                <td><p class="small-text">smith</p></td>
+                                <td><span class="view-profile"><i class="fa-solid fa-eye"></i></td>                             </tr>
+                            
+                        </table>
+                    </div>
+                </div>
+                <div class="left-box">
+                    <div class="part-1">
+                        <i class="fa-sharp fa-solid fa-video fa-2x"></i>
+                        <p class="small-text">3,000</p>
+                        <p class="small-text">Live</p>
+                    </div>
+                    <div class="part-2">
+                        <canvas id="live" height="80px" width="80px"></canvas>
+                        <p class="small-text">+12%</p>
+                    </div>
+                </div>
+        </div>
+    </session>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>
