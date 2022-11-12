@@ -45,8 +45,8 @@
             <div class="left-box">
                 <div class="part-1">
                     <i class="fa-solid fa-money-bill-1-wave blue"></i>
-                    <p class="small-text">12,361</p>
                     <p class="small-text">Transaction</p>
+                    <p class="small-text">123,234</p>
                 </div>
                 <div class="part-2">
                     <canvas id="transaction" height="75px" width="75px"></canvas>
@@ -56,8 +56,8 @@
             <div class="left-box">
                 <div class="part-1">
                     <i class="fa-solid fa-bug red"></i>
-                    <p class="small-text">120</p>
                     <p class="small-text">Report</p>
+                    <p class="small-text">120</p>
                 </div>
                 <div class="part-2">
                     <canvas id="report" height="75px" width="75px"></canvas>
@@ -67,8 +67,8 @@
             <div class="left-box">
                 <div class="part-1">
                     <i class="fa-regular fa-clock green"></i>
-                    <p class="small-text">11,00</p>
-                    <p class="small-text">Momements</p>
+                    <p class="small-text">Momement</p>
+                    <p class="small-text">200,123</p>
                 </div>
                 <div class="part-2">
                     <canvas id="momement" height="75px" width="75px"></canvas>
@@ -77,14 +77,43 @@
             </div>
         </div>
         <div class="show-center">
-            <div class="map">
-                <img src="../data/World-Map-Transparent.png" class="map-img"width="98%" height="100%" alt="">
+            <div class="show-center-content">
+                <!-- <img src="../data/World-Map-Transparent.png" class="map-img"width="98%" height="100%" alt=""> -->
+                <div class="user-profile">
+                    <div class="profile-part1">
+                        <img src="../data/17095300.jpg" class="profile-img" alt="">
+                        <ul class="profile-li">
+                            <li><span class="medium-text green">Michael Jackson</span></li>
+                            <li><span class="small-text light">38</span></li>
+                            <li><span class="small-text light">California</span></li>
+                            <li><span class="small-text light">09-12345678</span></li>
+                        </ul>
+                    </div>
+                    <div class="profile-part2">
+                        <div class="profile-box">
+                            <p class="small-tex light number">Momement</p>
+                            <p class="small-text light number">200</p>
+                        </div>
+                        <div class="profile-box">
+                            <p class="small-text light number">Transaction</p>
+                            <p class="small-text light number">25</p>
+                            
+                        </div>
+                        <div class="profile-box">
+                            <p class="small-text light number">Live</p>
+                            <p class="small-text light number">30</p>
+                        </div>
+                    </div>
+                    <div class="profile-part3">
+                        <canvas id="profile-line"></canvas>
+                    </div>
+                </div>
+            
             </div>
         </div>
         <div class="show-right">
                 <div class="user">
                     <p class="medium-text light"><span class="green">1,123,234</span> Users</p>
-                    <!-- <p class="small-text blue p-right">Total 123,234</p> -->
                     <div class="user-table">
                         <table>
                             <tr>
@@ -160,9 +189,9 @@
                 </div>
                 <div class="left-box">
                     <div class="part-1">
-                        <i class="fa-sharp fa-solid fa-video fa-2x"></i>
+                        <i class="fa-sharp fa-solid fa-video fa-2x brown"></i>
+                        <p class="small-text ">Live</p>
                         <p class="small-text">3,000</p>
-                        <p class="small-text">Live</p>
                     </div>
                     <div class="part-2">
                         <canvas id="live" height="80px" width="80px"></canvas>
