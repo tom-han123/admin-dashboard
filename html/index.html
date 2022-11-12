@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>99 Chat</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/menu.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
@@ -17,10 +18,10 @@
         <div class="menu">
           <div>
             <div>
-              <ul>
+              <ul class="menu-ul">
+                <li><a href="../html/index.html"><i class="fa-solid fa-gauge"></i>&nbsp;<span>Dashboard</span></a></li>
                 <li><a href="#"><i class="fa-regular fa-user"></i>&nbsp;<span>Profile</span></a></li>
-                <li><a href="#"><i class="fa-solid fa-gear"></i>&nbsp;<span>Setting</span></a></li>
-                <li><a href="#"><i class="fa-solid fa-door-open"></i>&nbsp;<span>Logout</span></a></li>
+                <li><a href="../html/signup_login.html"><i class="fa-solid fa-door-open"></i>&nbsp;<span>Logout</span></a></li>
                 <li><div id="google_translate_element"></div></li>
               </ul>
             </div>
@@ -113,7 +114,7 @@
         </div>
         <div class="show-right">
                 <div class="user">
-                    <p class="medium-text light"><span class="green">1,123,234</span> Users</p>
+                    <p class="medium-text light"><i class="fa-solid fa-users"></i> &nbsp;&nbsp;<span class="green">1,123,234</span></p>
                     <div class="user-table">
                         <table>
                             <tr>
@@ -189,7 +190,7 @@
                 </div>
                 <div class="left-box">
                     <div class="part-1">
-                        <i class="fa-sharp fa-solid fa-video fa-2x brown"></i>
+                        <i class="fa-sharp fa-solid fa-video fa-2x"></i>
                         <p class="small-text ">Live</p>
                         <p class="small-text">3,000</p>
                     </div>
@@ -202,5 +203,7 @@
     </session>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/dashboard_chart.js"></script>
+
 </body>
 </html>
