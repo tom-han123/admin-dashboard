@@ -109,3 +109,11 @@
   text-align: center;
 }
 
+.forget-pass{
+  font-size: 0.8rem;
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  margin:1rem auto;
+}
+

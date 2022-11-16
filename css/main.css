@@ -48,6 +48,10 @@ p{
     font-size: 1rem;
 }
 
+.pointer{
+    cursor: pointer;
+}
+
 
 /* Color */
 .dark{
@@ -105,7 +109,7 @@ nav{
 }
 
 .title .head{
-    font-size: 2.8rem;
+    font-size: 2rem;
     color:#f5f5f5;
     text-transform: uppercase;
     font-weight: 700;
@@ -229,6 +233,7 @@ tr:hover{
     background: rgba(255,255,255,0.3);
 }
 
+
 .view-profile{
     border-bottom: #50C878 1px solid;
     color: #50C878;
@@ -287,17 +292,25 @@ tr:hover{
   .user-profile{
     width: 100%;
     height: 100%;
-    display: grid;
+    display: none;
     grid-template-rows: 1fr 0.5fr 4fr;
   }
 
-  .profile-part1, .profile-part2{
+  .user-live{
+    width: 100%;
+    height: 100%;
+    display: none;
+    grid-template-rows: 1fr 4fr 0.5fr;
+  }
+
+  .profile-part1, .profile-part2, .live-part1{
     width: 100%;
     display: flex;
     justify-content:center;
     align-items:flex-start;
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
+  
 
   .profile-img{
     width: 150px;
@@ -305,6 +318,7 @@ tr:hover{
     border-radius: 50%;
     margin-right: 3rem;
     opacity: 80%;
+    border: #6870fa 1px solid;
   }
 
   .profile-li{
@@ -339,4 +353,45 @@ tr:hover{
     width: 60%;
     height: 240px;
     margin:1rem auto;
+}
+
+.live-part2{
+    width: 70%;
+    height: 300px;
+    margin:1rem auto;
+}
+
+.label-txt{
+    width: 70%;
+    margin: 1rem auto;
+}
+
+#tran-chart-part{
+    width: 90%;
+    height: 460px;
+    padding-top:8rem;
+    margin:0 auto;
+    display: none;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+#report-chart-part{
+    width: 90%;
+    height: 460px;
+    padding-top:8rem;
+    margin:0 auto;
+    display: none;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+#momement-chart-part{
+    width: 80%;
+    height: 380px;
+    padding-top:8rem;
+    margin:0 auto;
+    display: none;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
 }
